@@ -23,7 +23,7 @@ class Page(models.Model):
     is_deleted = models.BooleanField(blank=True, null=True, default=0)
 
     def __str__(self):
-        return '{}'.format(self.title)
+        return '{}'.format(self.url)
 
     class Meta:
         managed = True

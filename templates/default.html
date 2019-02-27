@@ -1,0 +1,12 @@
+{% extends 'layout/frontend.html' %}
+{% block title %}{{page.title}} | ChicagoGreeter{% endblock %}
+@section('title', $row->title . ' | Chicago Greeter')
+{% block content %}
+<div class="clearfix"></div>
+<div class="inner-content sub-page">
+<h3>{{ page.title|safe}}</h3>
+    <section class="content">
+        {{page.content|safe}}
+    </section>
+</div>
+{% endblock %}
